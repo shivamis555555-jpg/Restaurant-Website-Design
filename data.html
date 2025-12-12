@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Details</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #cd8d1f;
+            padding: 30px;
+        }
+        .box {
+            background: rgb(205, 83, 83);
+            padding: 25px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Reservation Details</h2>
+
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Date:</strong> <span id="date"></span></p>
+    <p><strong>Time:</strong> <span id="time"></span></p>
+    <p><strong>No. of Guests:</strong> <span id="guest"></span></p>
+</div>
+
+<script>
+    document.getElementById("name").textContent = localStorage.getItem("name");
+    document.getElementById("email").textContent = localStorage.getItem("email");
+    document.getElementById("date").textContent = localStorage.getItem("date");
+    document.getElementById("time").textContent = localStorage.getItem("time");
+    document.getElementById("guest").textContent = localStorage.getItem("guest");
+</script>
+
+</body>
+</html>

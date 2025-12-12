@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Website</title>
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <div class="section">
+        <header>
+            <div class="logo">TASTYBITES<span>👌</span></div>
+            <ul class="navlist">
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#make">OUR MENU</a></li>
+                <li><a href="#reservation">RESERVATION</a></li>
+                <li><a href="#reviews">REVIEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </header>
+        <div class="content1">
+            <h2>HELLO <span>FOODIES</span>(●'◡'●)</h2>
+            <h3>SAVOR <span>EVERY DELICIOUS</span> MOMENT</h3>
+            <h1>We're passionate about food and dedicated to your satisfaction!<br>Discover flavors that will delight
+                your palate.</h1>
+            <button>20% OFF</button>
+        </div>
+    </div>
+    <div id="make">
+        <p class="location">OUR MENU</p>
+        <div class="card">
+            <div class="card-item">
+                <img class="tem" src="paneer.jpg" alt="">
+                <p >Paneer and Naan<br>₹ 150</p>
+            </div>
+            <div class="card-item">
+                <img class="tem" src="Rajma Chawal.jpg" alt="">
+                <p>Rajma Chawal<br>₹ 50</p>
+            </div>
+            <div class="card-item">
+                <img class="tem" src="Chhole Bhature.jpg" alt="">
+                <p >Chhole Bhature<br>₹ 60</p>
+            </div>
+            <div class="card-item">
+                <img class="tem" src="Thali.jpg" alt="">
+                <p >Thali<br>₹ 150</p>
+            </div>
+            <div class="card-item">
+                <img class="tem" src="Litti Chokha.jpg" alt="">
+                <p >Litti Chokha<br>₹ 70</p>
+            </div>
+            <div class="card-item">
+                <img class="tem" src="Veg Chowmein.jpg" alt="">
+                <p >Veg Chowmein<br>₹ 50</p>
+            </div>
+        </div>
+    </div>
+    <div id="reservation">
+        <div class="reservation-form">
+            <h2>Online Reservation</h2>
+            <form>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="date" id="date" required>
+                <select required id="time">
+                    <option>Select Time</option>
+                    <option>12:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>07:00 PM</option>
+                </select>
+                <input type="number" id="guest" placeholder="Number of Guests" required>
+                <button type="button" onclick="reserveForm()">Reserve Table</button>
+
+            </form>
+        </div>
+    </div>
+     <div id="reviews">
+        <h2  id="how">Customer Reviews</h2>
+        <div class="reviews">
+            <div class="review-box">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Amazing food and great service!"</p>
+                <strong>- Rahul</strong>
+            </div>
+
+            <div class="review-box">
+                <p>⭐⭐⭐⭐</p>
+                <p>"Loved the ambiance. Will visit again."</p>
+                <strong>- Priya</strong>
+            </div>
+
+            <div class="review-box">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"A perfect dining experience!"</p>
+                <strong>- Arjun</strong>
+            </div>
+        </div>
+    <div id="contact">
+        <h2 id="how">Contact Us</h2>
+        <div class="contact">
+            <p><strong>Address:</strong> 123 Main Street, Sample City</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Email:</strong> hello@example.com</p>
+        </div>
+    </div>
+        <footer>
+        © 2025 TASTYBITES | All Rights Reserved
+        </footer>
+        <script src="reserveform.js"></script>
+</body>
+</html>

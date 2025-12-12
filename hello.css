@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #fff;
+    display: flex;  
+    width: 80%;
+    margin: auto;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0px 50px;   
+    box-shadow: rgba(0,0,0,0.16) 0px 10px 36px 0px , rgba(0,0,0,0.06) 0px 0px 0px 1px;
+}
+.navlist{   
+    display: flex; 
+    gap: 35px;
+}
+li {
+    list-style: none;  
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+}
+span ,.active,a:hover{
+    color: #9f242a;
+}
+.section {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.png.avif);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.content1{
+    position: sticky;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%,-50%);
+    text-align: center;
+}
+h1,h3,h2{
+    color: #fff;
+}
+h2{
+    padding: 30px;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px,0px;
+}
+h3{
+    font-size: 30px;
+}
+button {
+    padding: 20px , 40px;
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: #dc5671;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: #192d01;
+}
+section{   
+    padding: 60px 80px;
+    text-align: center;
+    margin-top: 100px;
+}
+p{
+    font-family: cursive;
+}
+.card{
+    display: flex;  
+    flex-wrap:wrap;
+    justify-content:space-evenly;   
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.tem{
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom:20px;
+    width:400px;
+    height:400px;
+}
+.location{
+    text-align:center;
+    color:black;
+    font-size: 26px;
+    margin-top :60px;
+    font-weight: 800;
+}
+.reservation-form{
+    margin-top: 40px;
+    background: #537cbd;
+    color: white;
+    padding: 50px 10%;
+    border-radius: 10px;
+}
+form input, form select{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+form button{
+    width: 100%;
+    padding: 15px;
+    background: #f4b400;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.reviews{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.review-box {
+    width: 300px;
+    background: #cd395c;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+}
+#how {
+    text-align: center;
+    color: black;
+}
+.contact{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer{
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
